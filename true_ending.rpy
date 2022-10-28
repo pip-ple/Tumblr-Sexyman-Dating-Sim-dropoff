@@ -106,6 +106,8 @@ label sansRei2:
   s "* well...{w=0.3} aside from that time me and papyrus went trash collecting."
   s "* who knew about the stuff you'd find in a dump?"
   s "* one man's trash is another man's treasure!"
+  show sans
+  s "* but still. he means the world to me"
   
 return
 
@@ -141,3 +143,13 @@ label billReveal:
 $ billIsHuman = True
 
 return
+
+
+
+# renpy.call ()
+init python:
+  def addLove(characterName, amount):
+    firstLetter = characterName[:1]
+    
+    eval(firstLetter[0] + "_love" += amount)
+     $ renpy.notify(str(characterName) + " love for you: " + str(eval(firstLetter[0] + "_love"))
