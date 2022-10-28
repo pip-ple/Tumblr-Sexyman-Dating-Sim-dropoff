@@ -1,3 +1,4 @@
+# https://www.renpy.org/doc/html/
 define k = Character("Kibble")
 
 label trueEnd:
@@ -38,8 +39,8 @@ label sansrei:
           show reigen ofc
           r "Haha! Exterminated!"
           s "* good job."
-          $ reiLove = reiLove + 20
-          $ renpy.notify("im not typing this in class: " + reiLove)
+          $ reiLove += 20
+          $ renpy.notify("Reigen's love for Sans: " + str(reiLove))
           r "Thank you~"
           call mainLoop
           
@@ -55,7 +56,7 @@ label sansrei:
           "Sans uses his powers to destroy the baby."
           s "* gottem."
           r "Thanks so much, sans!"
-          $ sansLove = sansLove + 10
+          $ sansLove += 10
           $ renpy.notify("yeah" + sansLove)
           show sans blush
           s "* n-no problem bro."
@@ -68,6 +69,8 @@ label sansrei:
   s "* heh. you're a cutie"
   show reigen blush
   extend " let's go out sometime. to grillby's. my treat."
+  $ reiLove += 150
+  $ renpy.notify("Reigen's love for Sans: " + str(reiLove))
   r "Grill... by's..?"
   s "* yep!"
   r "I just-{nw}"
@@ -79,7 +82,62 @@ label sansrei:
   show sans blush
   s "* sweet. meet me at closing time."
   "Reigen giggles off like a teenager."
-  
+  $ r_love = 0
+  $ s_love = 0
+  # they're just that loyal to one another <3
   scene bg black with fade
   call mainLoop
+return
+
+label sansRei2:
+  show sans at hi, right
+  s "* oh hey [bro]."
+  s "* you know reigen? the dude with the blonde-ish hair?"
+  show sans blush
+  s "* haha.. um."
+  s "* we're...{w=0.3} we're dating."
+  s "* ...yeah."
+  you "I'm happy for you, Sans!"
+  show sans
+  s "* thanks a bunch, [bro]."
+  show sans wink
+  s "* i've never really been happier."
+  show sans heh
+  s "* well...{w=0.3} aside from that time me and papyrus went trash collecting."
+  s "* who knew about the stuff you'd find in a dump?"
+  s "* one man's trash is another man's treasure!"
+  
+return
+
+
+
+
+
+
+
+
+
+
+
+# random space
+
+
+
+
+
+
+
+
+
+label williamReveal:
+show vincent at hi
+v "Oh, why hello [name]!"
+v ""
+$ williamReveal = True
+
+return
+
+label billReveal:
+$ billIsHuman = True
+
 return
