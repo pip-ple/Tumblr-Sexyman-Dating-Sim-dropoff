@@ -133,12 +133,72 @@ return
 
 
 
-
+# fun fact-- i LOST all this when i was originally wrtiting it.
 label williamReveal:
 show vincent at hi
 v "Oh, why hello [name]!"
-v ""
-$ williamReveal = True
+v "Listen, I got something real important to tell ya."
+show vincent bruh
+v "I really didn't wanna tell you this, pal."
+v "But, I guess when the time's right, it really is."
+v "Y'see... I'm..."
+v "I..."
+menu:
+    "Well... I--"
+    "Hug him":
+        "You hug him."
+        show vincent paint
+        v "..!"
+        v "Gee was really unexpected--"
+        pass
+    "Don't do anything":
+        v "...Nevermind."
+        v "It's not important."
+        v "Talk to ya later."
+        hide vincent
+        $ williamReveal = False
+        call mainLoop
+
+window hide
+show vincent paint golly
+pause 1.0
+scene bg black with fade
+v "Hahaha..."
+show bg placeholder with fade
+$ v = Character("William Afton")
+window hide
+show vincent paint reveal
+pause 1.0
+v "Well, that was unexpected, innit?"
+show vincent william
+v "Sorry you had to find out like this, mate."
+menu:
+    "It's okay":
+        v "Blimey... {w=0.2} I thought a [gentleman] like you would've hated me."
+        v "Now you know I'm definitely not purple."
+        you "That's okay, Vincent."
+        you "Appearances don't matter to me." # sorry if this is like your sexuality erasure bc this is something a pan person would prob say
+        show vincent william smirk
+        v "I'm glad."
+        you "Anyway, what were you going to tell me?"
+        show vincent william bruh
+        v "..."
+        v "Nevermind it now, mate."
+        show vincent william
+        v "I'll tell you later. Ta-ta, [name]."
+        
+    "Wow unbelievable":
+        show vincent william bruh
+        v "..."
+        v "Just because I'm British."
+        $ renpy.notify("William's love for you: " + str(v_love))
+        $ renpy.notify("You mean as shit bruh lmaoooo")
+        v "You're just rubbish."
+        $ renpy.notify("Nvm he's British do what you want")
+        v "Fuck off, mate."
+        hide vincent william
+        $ williamReveal = True
+        call mainLoop
 
 return
 
