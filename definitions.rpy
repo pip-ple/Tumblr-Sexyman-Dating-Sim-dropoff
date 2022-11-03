@@ -154,6 +154,39 @@ image benrey blush = "benrey/blush.png"
 image benrey hm = "benrey/hm.png"
 image benrey haha = "benrey/haha.png"
 
+# wheatly
+
+image wheatly = "wheatly/neutral.png"
+image wheatly happy = "wheatly/happy.png"
+image wheatly happy2 = "wheatly/happy2.png"
+image wheatly hmph = "wheatly/hmph.png"
+image wheatly hmph2 = "wheatly/hmph2.png"
+image wheatly huh = "wheatly/huh.png"
+image wheatly evil = "wheatly/michevous.png"
+image wheatly evil = "wheatly/michevous2.png"
+image wheatly smile = "wheatly/squee.png"
+image wheatly grr = "wheatly/grr.png"
+image wheatly grr2 = "wheatly/grr.png"
+image wheatly eugh = "wheatly/eugh.png"
+image wheatly blush = "wheatly/blush.png"
+
+# oamp to
+
+image spamton = "spamton/neutral.png"
+image spamton 2 = "spamton/neutral2.png"
+image spamton hm = "spamton/hm.png"
+image spamton smirk = "spamton/smirk.png"
+image spamton smirk2 = "spamton/smirk2.png"
+image spamton sweat = "spamton/sweat.png"
+image spamton grin = "spamton/grin.png"
+image spamton smile = "spamton/smile.png"
+
+image spamton ne = "spamton/neutral_noeyes.png"
+image spamton 2 ne = "spamton/neutral2_noeyes.png"
+image spamton blush = "spamton/blush.png"
+
+image spamton glitch = "spamton/glitch.png"
+image spamton static = "spamton/static.png"
 
 # demencia (im so spelling this wrong)
 
@@ -164,6 +197,8 @@ image demencia wink = "demencia/yep.png"
 # cameos
 
 image kibble = "cameos/kibble.png"
+image papyrus = "unused/papyrus.png"
+image kokichi = "unused/kokichi.png"
 ## sounds
 
 define audio.weiner = "audio/weiner.mp3"
